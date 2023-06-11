@@ -2,16 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
-  <title>Frontend Mentor | QR code component</title>
+  <title>QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    html {
+      display: flex;
+      width: 100%;
+      min-height: 100%;
+      vertical-align: middle;
+    }
+
+    body {
+      display: flex;
+      min-height: inherit;
+      width: inherit;
+      margin: 0;
+      padding: 0;
+      background-color: hsl(220, 15%, 55%);
+      justify-content: center;
+      align-items: center;
+    }
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -28,21 +44,14 @@
 
     }
 
-    body {
-      background-color: hsl(220, 15%, 55%);
-      justify-content: center;
-      align-items: center;
-    }
 
-    .qrCard {
 
-      padding: 15px;
-      position: relative;
-      margin: auto;
+    div.qrCard {
+
+      padding: 20px;
       justify-content: center;
       max-width: 200px;
-      width: 100%;
-      height: auto;
+      max-height: 300px;
       background-color: white;
       border-radius: 10px;
       box-shadow: 3px 3px 3px hsl(218, 29%, 38%);
